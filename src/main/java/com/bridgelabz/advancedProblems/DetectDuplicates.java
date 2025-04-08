@@ -15,24 +15,22 @@ public class DetectDuplicates {
             CSVReader reader = new CSVReader(new FileReader(file));
             reader.readNext();
 
-            List<String[]> rows = reader.readAll();
-            Set<String> uniqueRows = new HashSet<>();
+            String[] line;
+            Set<String> uniqueIds = new HashSet<>();
             Set<String> duplicates = new LinkedHashSet<>();
 
-            for (String[] row : rows) {
-                String result = String.join(",", row);
-                if (!uniqueRows.add(result)) {
-                    duplicates.add(result);
+            while ((line = reader.readNext()) != null){
+                String id = line[0];
+
+                if (!uniqueIds.add(id)) {
+                    duplicates.add(id);
                 }
             }
 
             if (duplicates.isEmpty()) {
                 System.out.println("No duplicate rows found.");
             } else {
-                System.out.println("Duplicate rows found:");
-                for (String d : duplicates) {
-                    System.out.println(d);
-                }
+                System.out.println("Duplicate ID found: " + duplicates);
             }
 
         } catch (IOException | CsvException e) {
