@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class WriteCSVFile {
     public static void main(String[] args) {
-        String employeeFile = "employeeDetails.csv";
+        String employeeFile = "files/employeeDetails.csv";
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(employeeFile));
 

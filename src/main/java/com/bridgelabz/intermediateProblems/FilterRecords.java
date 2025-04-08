@@ -4,7 +4,7 @@ import java.io.*;
 
 public class FilterRecords {
     public static void main(String[] args) {
-        String file = "studentDetails.csv";
+        String file = "files/studentDetails.csv";
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));

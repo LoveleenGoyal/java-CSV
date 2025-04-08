@@ -5,7 +5,7 @@ import java.io.*;
 public class ReadCSVFile {
     public static void main(String[] args) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("studentDetails.csv"));
+            BufferedReader reader = new BufferedReader(new FileReader("files/studentDetails.csv"));
             String line;
             reader.readLine(); // skip header line
 

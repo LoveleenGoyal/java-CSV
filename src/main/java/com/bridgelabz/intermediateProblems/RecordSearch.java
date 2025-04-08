@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class RecordSearch {
     public static void main(String[] args) {
-        String file = "employeeDetails.csv";
+        String file = "files/employeeDetails.csv";
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter employee name to search: ");

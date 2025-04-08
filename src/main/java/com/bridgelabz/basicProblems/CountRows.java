@@ -5,7 +5,7 @@ import java.util.*;
 
 public class CountRows {
     public static void main(String[] args){
-        String recordFile = "records.csv";
+        String recordFile = "files/records.csv";
 
         try {
             Scanner sc = new Scanner(new File(recordFile));

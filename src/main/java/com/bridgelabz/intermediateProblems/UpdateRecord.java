@@ -6,8 +6,8 @@ import java.util.List;
 
 public class UpdateRecord {
     public static void main(String[] args) {
-        String inputFile = "employeeDetails.csv";
-        String outputFile = "updatedEmployeeDetails.csv";
+        String inputFile = "files/employeeDetails.csv";
+        String outputFile = "files/updatedEmployeeDetails.csv";
 
         List<String> updatedLines = new ArrayList<>();
 
