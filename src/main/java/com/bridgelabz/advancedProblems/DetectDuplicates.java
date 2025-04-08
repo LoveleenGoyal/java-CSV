@@ -20,9 +20,9 @@ public class DetectDuplicates {
             Set<String> duplicates = new LinkedHashSet<>();
 
             for (String[] row : rows) {
-                String joined = String.join(",", row).trim();
-                if (!uniqueRows.add(joined)) {
-                    duplicates.add(joined);
+                String result = String.join(",", row);
+                if (!uniqueRows.add(result)) {
+                    duplicates.add(result);
                 }
             }
 
@@ -30,8 +30,8 @@ public class DetectDuplicates {
                 System.out.println("No duplicate rows found.");
             } else {
                 System.out.println("Duplicate rows found:");
-                for (String dup : duplicates) {
-                    System.out.println(dup);
+                for (String d : duplicates) {
+                    System.out.println(d);
                 }
             }
 

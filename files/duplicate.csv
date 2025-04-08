@@ -2,10 +2,10 @@ ID,Name,Department,Salary
 101,John Smith,HR,50000
 102,Alice Brown,IT,60000
 103,Robert White,Sales,55000
-104,Alice Brown,IT,60000
-105,Linda Green,Marketing,58000
-106,John Smith,HR,50000
-107,Emily Davis,IT,62000
-108,Robert White,Sales,55000
-109,Daniel Lee,Finance,59000
-110,Michael Clark,IT,63000
+104,Emily Davis,Finance,59000
+101,John Smith,HR,50000
+105,Michael Clark,IT,63000
+106,Daniel Lee,Marketing,52000
+102,Alice Brown,Support,62000
+107,Olivia Lewis,HR,58000
+108,Linda Green,IT,61000
